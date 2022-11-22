@@ -119,7 +119,6 @@ a {
 .burger_button span,
 .burger_button span::before,
 .burger_button span::after {
-  position: absolute;
   top: 50%;
   margin-top: -1px;
   width: 18px;
@@ -316,6 +315,21 @@ a {
 
   text-align: center;
   text-transform: uppercase;
+}
+.location_title {
+  margin: 0 0 30px 251px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 120%;
+  color: #fe9013;
+}
+.contacts_wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .white {
@@ -2149,11 +2163,18 @@ footer {
     cursor: pointer;
   }
 
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .feedback_footer {
+    margin-bottom: 0;
+  }
   /*footer*/
 
   footer {
     position: relative;
-    margin-top: 80px;
     height: 282px;
   }
 
